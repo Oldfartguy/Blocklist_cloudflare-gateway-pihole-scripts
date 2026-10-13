@@ -39,6 +39,7 @@ jobs:
           echo "Downloading..."
           curl -fsSL --max-time 90 --parallel --parallel-immediate \
             https://raw.githubusercontent.com/Oldfartguy/Oldfartguy-blocklist/refs/heads/main/List.txt \
+            https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/domains.wildcards \
             https://adguardteam.github.io/HostlistsRegistry/assets/filter_16.txt \
             https://big.oisd.nl/domainswild2 \
           | awk '{

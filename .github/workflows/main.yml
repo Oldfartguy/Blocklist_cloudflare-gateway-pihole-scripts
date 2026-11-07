@@ -39,7 +39,9 @@ jobs:
           echo "Downloading..."
           curl -fsSL --max-time 90 --parallel --parallel-immediate \
             https://small.oisd.nl/domainswild2 \
-            https://adaway.org/hosts.txt \
+            https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt \
+            https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/popupads.txt \
+            https://adguardteam.github.io/AdguardFilters/MobileFilter/sections/adservers.txt \
             https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts \
             https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts \
             https://raw.githubusercontent.com/Oldfartguy/Oldfartguy-blocklist/refs/heads/main/List.txt \

@@ -38,7 +38,8 @@ jobs:
 
           echo "Downloading..."
           curl -fsSL --max-time 90 --parallel --parallel-immediate \
-            https://big.oisd.nl/domainswild2 \
+            https://small.oisd.nl/domainswild2 \
+            https://adaway.org/hosts.txt \
             https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts \
             https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts \
             https://raw.githubusercontent.com/Oldfartguy/Oldfartguy-blocklist/refs/heads/main/List.txt \

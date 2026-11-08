@@ -38,13 +38,9 @@ jobs:
 
           echo "Downloading..."
           curl -fsSL --max-time 90 --parallel --parallel-immediate \
-            https://small.oisd.nl \
-            https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt \
-            https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/popupads.txt \
+            https://big.oisd.nl/domainswild2 \
             https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts \
             https://raw.githubusercontent.com/Oldfartguy/Oldfartguy-blocklist/refs/heads/main/List.txt \
-            https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/native.tiktok.extended.txt \
-            https://badmojr.github.io/1Hosts/Lite/adblock.txt \
           | awk '{
               if (/^[[:space:]]*$/ || /^[!#;]/) next
               line = tolower($0)
